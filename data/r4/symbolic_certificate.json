@@ -1,0 +1,39 @@
+{
+  "research_status": "illustrative mathematical certificate, NOT measured or validated material performance",
+  "certified_claim": "The componentwise envelope contains energy-infeasible corners for every alpha<1 (both networks).",
+  "2node_upper_gap": "10*q*(5+q)/(225-4*q*q)",
+  "2node_lower_gap": "10*q*(5-q)/(225-4*q*q)",
+  "2node_support_deficit_W": "40/221",
+  "2node_support_excess_W": "60/221",
+  "3node_support_deficit_W": "3695632/7625673",
+  "3node_support_excess_W": "1855736/2541891",
+  "101_cut_checks": 202,
+  "exact_conserved_corner_solutions_checked": 4040,
+  "monotone_nested_cut_transitions_checked": 200,
+  "3node_det": "3*a*b + 2*a + 2*b + 1",
+  "3node_symbolic_derivative_signs": [
+    [
+      "negative",
+      "negative"
+    ],
+    [
+      "positive",
+      "negative"
+    ],
+    [
+      "positive",
+      "positive"
+    ]
+  ],
+  "3node_global_lower_gap_q": "4*q*(q - 5)*(72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000)/((q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+  "3node_global_upper_gap_q": "-4*q*(q + 5)*(72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000)/((q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+  "3node_bounds": {
+    "T1_lower(q)": "-(q - 5)*(17*q**2 + 345*q + 1550)/(5*(q + 10)*(3*q + 20))",
+    "T2_lower(q)": "-(q - 5)*(17*q**2 + 40*q - 1100)/(5*(3*q**2 - 200))",
+    "T3_lower(q)": "-(q - 5)*(17*q**2 - 225*q + 750)/(5*(q - 10)*(3*q - 20))",
+    "T1_upper(q)": "(q + 5)*(17*q**2 - 345*q + 1550)/(5*(q - 10)*(3*q - 20))",
+    "T2_upper(q)": "(q + 5)*(17*q**2 - 40*q - 1100)/(5*(3*q**2 - 200))",
+    "T3_upper(q)": "(q + 5)*(17*q**2 + 225*q + 750)/(5*(q + 10)*(3*q + 20))"
+  },
+  "symbolic_tests_passed": "1 determinant + 6 signed derivatives + 6 boundary/width tests + 2 support gaps"
+}

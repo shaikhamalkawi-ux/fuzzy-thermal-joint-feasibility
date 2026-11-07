@@ -1,0 +1,8 @@
+{
+  "symmetric_matched_marginal_upper_gap": "G*eta*q*(q*sigma + 1)/(3*(eta*q + 3))",
+  "symmetric_matched_marginal_lower_gap": "G*eta*q*(q*sigma - 1)/(3*(eta*q - 3))",
+  "symbolic_derivation_upper": true,
+  "symbolic_derivation_lower": true,
+  "material_shared_marginals": true,
+  "strict_positive_for_0_lt_q_le_1_when_eta_lt_1_and_sigma_lt_1": true
+}

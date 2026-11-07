@@ -1,0 +1,20 @@
+{
+  "source_code": "R4 exact independent repair and conditional Kirchhoff extension",
+  "symbolic_upper_sharp_L1_K": "-eta*q*(q*sigma + 1)/(3*(eta*q - 1)*(eta*q + 3))",
+  "symbolic_lower_sharp_L1_K": "eta*q*(q*sigma - 1)/(3*(eta*q - 3)*(eta*q + 1))",
+  "symbolic_upper_sharp_Linfty_K": "-eta*q*(q*sigma + 1)/(6*(eta*q - 1)*(eta*q + 3))",
+  "symbolic_lower_sharp_Linfty_K": "eta*q*(q*sigma - 1)/(6*(eta*q - 3)*(eta*q + 1))",
+  "hstar_upper_over_G": "(eta*q - 1)*(2*eta*q + 3)/(eta*q - 3)",
+  "hstar_lower_over_G": "-(eta*q + 1)*(2*eta*q - 3)/(eta*q + 3)",
+  "support_upper_L1_K": "40/29799",
+  "support_lower_L1_K": "80/90597",
+  "support_upper_Linfty_K": "20/29799",
+  "support_lower_Linfty_K": "40/90597",
+  "support_max_temperature_linearization_bound_K": "50/29403",
+  "support_repaired_upper_h_over_G": "14949/14950",
+  "support_repaired_lower_h_over_G": "15049/15050",
+  "rational_conservative_node_states_checked": 3232,
+  "alpha_cuts_checked": 101,
+  "proof_status": "all-alpha via source-proved monotonicity, sharp conservation bound, constructive attainer; grids corroborative",
+  "physical_guardrail": "Kirchhoff transformation classical; NIST lambda(T) measured mean-temperature relation, local-Fourier use is conditional model extrapolation"
+}

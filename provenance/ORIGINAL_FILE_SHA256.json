@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-08",
+  "scientific_baseline": "R6",
+  "editorial_baseline": "R6P12",
+  "files": {
+    "scripts/r4/r4_exact_sharp_repair.py": {
+      "origin_archive": "R4",
+      "origin_member": "r4_exact_sharp_repair.py",
+      "sha256": "8ab1118e0e8d5d0534167d27670df9ee066c6427dfbd295c6008f7d3a13fdb2d"
+    },
+    "data/r4/R4_exact_sharp_repair_101cuts.csv": {
+      "origin_archive": "R4",
+      "origin_member": "R4_exact_sharp_repair_101cuts.csv",
+      "sha256": "660bbdad041e9bdb0fc73a2901fdd2bbc6e00e938acbe6deca815de2a39be015"
+    },
+    "data/r4/R4_exact_sharp_repair_certificate.json": {
+      "origin_archive": "R4",
+      "origin_member": "R4_exact_sharp_repair_certificate.json",
+      "sha256": "f372c99b8c79447e2f3e58f75af9f6b1a01a55e725df076a010ddb77301c2768"
+    },
+    "scripts/r4/reproduce_exact_thermal.py": {
+      "origin_archive": "R4",
+      "origin_member": "reproduce_exact_thermal.py",
+      "sha256": "61dd7c812018de599093aee301df3477a2d9d6cf25cdc69cb39920e615bf051f"
+    },
+    "scripts/r4/reproduce_nist_common_k.py": {
+      "origin_archive": "R4",
+      "origin_member": "reproduce_nist_common_k.py",
+      "sha256": "49c8c63a686ae2f35d3d376f769977a4802ae3b750dd04b3ad42ec30c2b4c0ca"
+    },
+    "scripts/r4/reproduce_matched_marginal_dependence.py": {
+      "origin_archive": "R4",
+      "origin_member": "reproduce_matched_marginal_dependence.py",
+      "sha256": "5684d894bcc7257ff9c244caa43838172e8ed5740e9d9ca72c89a0bf8e49f9a9"
+    },
+    "scripts/r4/independent_symbolic_proof.py": {
+      "origin_archive": "R4",
+      "origin_member": "independent_symbolic_proof.py",
+      "sha256": "aeea33e4c90066c69f0ef33f0fa388c747fea6cfb743614ab9351269d3357319"
+    },
+    "data/r4/thermal_two_three_node_101cuts.csv": {
+      "origin_archive": "R4",
+      "origin_member": "thermal_two_three_node_101cuts.csv",
+      "sha256": "b4e336d6c34a419576b6378903de663415686eea94b6e58cd339dfdbc052f870"
+    },
+    "data/r4/symbolic_certificate.json": {
+      "origin_archive": "R4",
+      "origin_member": "symbolic_certificate.json",
+      "sha256": "dc092ca25dbcc25ebdf2f12b87bb61c5feb32a9389537b84921f2e904e974c8f"
+    },
+    "data/r4/NIST_commonK_101cut_certificate.csv": {
+      "origin_archive": "R4",
+      "origin_member": "NIST_commonK_101cut_certificate.csv",
+      "sha256": "7a3f1437cb9d1b7455ba11cc040ebd5b62a2543193af9bb089fb0d579917e169"
+    },
+    "data/r4/NIST_commonK_certificate.json": {
+      "origin_archive": "R4",
+      "origin_member": "NIST_commonK_certificate.json",
+      "sha256": "80739438a7e394b0997a09af127ad0431b6b2e3c3166b7224d431ed5a9f714bc"
+    },
+    "data/r4/matched_marginal_101cuts.csv": {
+      "origin_archive": "R4",
+      "origin_member": "matched_marginal_101cuts.csv",
+      "sha256": "986c9f05cc62ddf53cb4673fef62a395221275a1484cd14237a4d57641d38f22"
+    },
+    "data/r4/matched_marginal_certificate.json": {
+      "origin_archive": "R4",
+      "origin_member": "matched_marginal_certificate.json",
+      "sha256": "3a4e9973af19ba67b2efb562f0ff023f92ec2af45224e76ddfe7c3925fa9e931"
+    },
+    "data/r4/matched_marginal_sympy_certificate.json": {
+      "origin_archive": "R4",
+      "origin_member": "matched_marginal_sympy_certificate.json",
+      "sha256": "5371798fdf93b2df31f61ac5c99c121cbede14f740128ec726a4f8732e7258e8"
+    },
+    "data/r5/NIST_1450d_TableI1_source_rows.csv": {
+      "origin_archive": "R5",
+      "origin_member": "NIST_1450d_TableI1_source_rows.csv",
+      "sha256": "7e64edba6efccdf29e0c82230dadd61a27f145f0dfc876e336d6c9345ec9450a"
+    },
+    "data/r5/NIST_1450d_TableI1_residuals_recomputed.csv": {
+      "origin_archive": "R5",
+      "origin_member": "NIST_1450d_TableI1_residuals_recomputed.csv",
+      "sha256": "0514f8d2164edee5285b97377b8c4db28c8bc86267953635c5176a5e4a41f4e9"
+    },
+    "data/r5/NIST_sensitivity_results.csv": {
+      "origin_archive": "R5",
+      "origin_member": "NIST_sensitivity_results.csv",
+      "sha256": "df2df007d4735be4e390b3fd2204715d530920a9ee2269509dd5cb9269d3f517"
+    },
+    "data/r5/NIST15_source_audit_certificate.json": {
+      "origin_archive": "R5",
+      "origin_member": "NIST15_source_audit_certificate.json",
+      "sha256": "3eb715901e3ec71f234bc7dc0547ee3de72244eec744648b158b4084f00663f9"
+    },
+    "data/r5/NIST15_descriptive_eta_101cut_grid.csv": {
+      "origin_archive": "R5",
+      "origin_member": "NIST15_descriptive_eta_101cut_grid.csv",
+      "sha256": "06e6f2923a0b625bf2b4a0493ebc758e604d9a29d0b2e92c2345a5c78878137f"
+    },
+    "data/r5/NIST15_independent_corner_certificate.json": {
+      "origin_archive": "R5",
+      "origin_member": "NIST15_independent_corner_certificate.json",
+      "sha256": "ac2ffade5a43dc0c2e8c18acef8872bd0af791dfd1f6cfcb609b9f20cd4faed2"
+    },
+    "data/r5/R5_CleanReplay_Checksums.json": {
+      "origin_archive": "R5",
+      "origin_member": "R5_CleanReplay_Checksums.json",
+      "sha256": "e9d6af5e0a7972ddc7595fe7a32e54ef76863570f866b719379ac697ae194923"
+    },
+    "scripts/r5/reproduce_nist15_source_sensitivity.py": {
+      "origin_archive": "R5",
+      "origin_member": "reproduce_nist15_source_sensitivity.py",
+      "sha256": "0f2662613f171bf3d092d95a1a7ad2ddcad72bdb2bc27d0367abf1beee0ae199"
+    },
+    "scripts/r5/independent_3232_cut_checker.py": {
+      "origin_archive": "R5",
+      "origin_member": "independent_3232_cut_checker.py",
+      "sha256": "5454cd8db84375ced3aba7225257a99ddc288e69b7e99d47b5f09a3cbcc4e751"
+    },
+    "scripts/r5/verify_R5_clean_replay.py": {
+      "origin_archive": "R5",
+      "origin_member": "verify_R5_clean_replay.py",
+      "sha256": "3aa2500c0183f0cc35e7fcef63d627d8df4c432668e0850914eb02f9ab7d3fd9"
+    },
+    "scripts/r5/build_r5.py": {
+      "origin_archive": "R5",
+      "origin_member": "build_r5.py",
+      "sha256": "8b10aa7dded3102894b6ea6cc76ee122038f456dc304f7d5530cbde73c4fda2b"
+    },
+    "data/r6/R6_3node_101cut_sharp_repair.csv": {
+      "origin_archive": "R6",
+      "origin_member": "R6_3node_101cut_sharp_repair.csv",
+      "sha256": "78cbf7e5a32107779fecba32002459c72f064434335938d58d7d0d9db762b799"
+    },
+    "data/r6/R6_3node_8_inequality_certificates.csv": {
+      "origin_archive": "R6",
+      "origin_member": "R6_3node_8_inequality_certificates.csv",
+      "sha256": "1c8523fe155fb8be313d66b685d8004e6fdf848a04cc2b22045dd70506ecf6c4"
+    },
+    "scripts/r6/R6_3node_sharp_repair_certificate.py": {
+      "origin_archive": "R6",
+      "origin_member": "R6_3node_sharp_repair_certificate.py",
+      "sha256": "ae3109938e4799a4bee04857bae7c2d9ddcedeaac895e3d9dc23f7fad614a417"
+    },
+    "data/r6/R6_3node_summary.json": {
+      "origin_archive": "R6",
+      "origin_member": "R6_3node_summary.json",
+      "sha256": "4ba0ba5d455af026088137c8a3a2b3ef2f242171c29d391f3a2418cf97b910df"
+    },
+    "scripts/r6/R6_independent_fraction_replay.py": {
+      "origin_archive": "R6",
+      "origin_member": "R6_independent_fraction_replay.py",
+      "sha256": "cefbebd3e9ee24b6a15d0893ea90a9bb7fb6e8c7e99bd5f8ed03b138abc7b91c"
+    },
+    "scripts/r6/build_R6_paper.py": {
+      "origin_archive": "R6",
+      "origin_member": "build_R6_paper.py",
+      "sha256": "898af147d0698551945072ff9aa0ef43cbb2fba98d98bf4230dcd5f5949adb2b"
+    },
+    "scripts/r6/verify_R6_clean_replay.py": {
+      "origin_archive": "R6",
+      "origin_member": "verify_R6_clean_replay.py",
+      "sha256": "dcdfa1705c11082c93875d4f1142d733afd65217c9c95e28328e6f4db11c7577"
+    },
+    "data/g2/inputs/r6/R6_3node_8_inequality_certificates.csv": {
+      "origin_archive": "G2",
+      "origin_member": "inputs/r6/R6_3node_8_inequality_certificates.csv",
+      "sha256": "1c8523fe155fb8be313d66b685d8004e6fdf848a04cc2b22045dd70506ecf6c4"
+    },
+    "data/g2/inputs/r6/R6_3node_sharp_repair_certificate.py": {
+      "origin_archive": "G2",
+      "origin_member": "inputs/r6/R6_3node_sharp_repair_certificate.py",
+      "sha256": "ae3109938e4799a4bee04857bae7c2d9ddcedeaac895e3d9dc23f7fad614a417"
+    },
+    "data/g2/inputs/r6/R6_3node_summary.json": {
+      "origin_archive": "G2",
+      "origin_member": "inputs/r6/R6_3node_summary.json",
+      "sha256": "4ba0ba5d455af026088137c8a3a2b3ef2f242171c29d391f3a2418cf97b910df"
+    },
+    "data/g2/outputs/G2_INDEPENDENT_EIGHT_CERTIFICATES.csv": {
+      "origin_archive": "G2",
+      "origin_member": "outputs/G2_INDEPENDENT_EIGHT_CERTIFICATES.csv",
+      "sha256": "63c109229dcccc268c8efa882fcf909b7833e404fa886f8e12d3404f1640a934"
+    },
+    "data/g2/outputs/G2_INDEPENDENT_EIGHT_CERTIFICATES.json": {
+      "origin_archive": "G2",
+      "origin_member": "outputs/G2_INDEPENDENT_EIGHT_CERTIFICATES.json",
+      "sha256": "0eeefc55ba15067185c198959be58bde77f16a05bc5379a2e00c53613980e002"
+    },
+    "scripts/g2/independent_certificate_audit.py": {
+      "origin_archive": "G2",
+      "origin_member": "scripts/independent_certificate_audit.py",
+      "sha256": "2c74df2607d3ee19cc9dcbe75dd52036a8b4a5cb8183c01fd0f870cf3e9103e3"
+    },
+    "figures/Figure_2node_Energy_Balance_Gap.png": {
+      "origin_archive": "R6P12",
+      "origin_member": "Figure_2node_Energy_Balance_Gap.png",
+      "sha256": "621cc4f6a577c3d26eef6df35b0bbec76f40930f5d46292990601b3a78b7d325"
+    },
+    "figures/Figure_NIST_MatchedMarginal_Dependence.png": {
+      "origin_archive": "R6P12",
+      "origin_member": "Figure_NIST_MatchedMarginal_Dependence.png",
+      "sha256": "4e10a8be68ce078808583f0faf90af4369e27c05e3fad32e1baeb3eb55ddf61b"
+    },
+    "figures/Figure_NIST_2014_TableI1_SourceResiduals.png": {
+      "origin_archive": "R6P12",
+      "origin_member": "Figure_NIST_2014_TableI1_SourceResiduals.png",
+      "sha256": "c913e1d9468370734e0b015d80be1b606d6c0b7c0ffc3d2063d846d68266fc82"
+    },
+    "figures/Figure_R6_ThreeNode_SharpRepair.pdf": {
+      "origin_archive": "R6P12",
+      "origin_member": "Figure_R6_ThreeNode_SharpRepair.pdf",
+      "sha256": "b82525ea28026499c0149132737fc580fdb3acbad978b04b195585c0bce26ab9"
+    }
+  }
+}

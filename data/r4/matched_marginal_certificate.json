@@ -1,0 +1,14 @@
+{
+  "material_conductance_nominal_W_K": "331467/1016000",
+  "eta": "1/100",
+  "load_band": "1/5",
+  "mathematical_input_marginal_match": "TRUE (same each-link cuts; different dependence)",
+  "certificate": "q in [0,1]: \u0394U=G(1+\u03c3q)\u03b7q/[3(3+\u03b7q)], \u0394L=G(1\u2212\u03c3q)\u03b7q/[3(3\u2212\u03b7q)]",
+  "support_upper_independent_gap_W": "331467/764540000",
+  "support_lower_independent_gap_W": "110489/379730000",
+  "support_upper_decimal": 0.00043355089334763387,
+  "support_lower_decimal": 0.0002909672662154689,
+  "support_common_gap_W": "0",
+  "exact_independent_corner_solves": 3232,
+  "exact_global_extrema_levels": 101
+}

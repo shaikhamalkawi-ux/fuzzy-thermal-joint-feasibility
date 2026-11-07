@@ -1,0 +1,114 @@
+{
+  "source": "Zarr, Heckert, Leigh 2014, DOI:10.6028/jres.119.012, Table I1, SRM1450d, Lot2009",
+  "certification_source": "NIST SP260-173 DOI:10.6028/NIST.SP.260-173",
+  "input_access": "published source Table I1 transcribed from official NIST PDF; NIST source-data ZIP binary NOT obtained",
+  "data_points": 15,
+  "number_temperature_groups": 5,
+  "count_nominally_below_280_K_due_to_printed_precision": 2,
+  "all_abs_deviations_within_1_percent": 15,
+  "signed_mean_percent": -0.005712439140626592,
+  "mean_abs_deviation_percent": 0.27063285593007613,
+  "rms_relative_deviation_percent": 0.34033801574430134,
+  "max_abs_deviation_percent": 0.6677567231811894,
+  "max_abs_deviation_row": 15,
+  "max_abs_deviation_exact_fraction": "250850489/37566149511",
+  "source_temperature_group_comparison": [
+    {
+      "nominal_temperature_K": 280,
+      "n": 3,
+      "min_observed_lambda_W_mK": 0.030898,
+      "max_observed_lambda_W_mK": 0.031123,
+      "max_abs_residual_pct": 0.6022005704859328
+    },
+    {
+      "nominal_temperature_K": 295,
+      "n": 3,
+      "min_observed_lambda_W_mK": 0.03245,
+      "max_observed_lambda_W_mK": 0.032614,
+      "max_abs_residual_pct": 0.44291547583192165
+    },
+    {
+      "nominal_temperature_K": 310,
+      "n": 3,
+      "min_observed_lambda_W_mK": 0.034089,
+      "max_observed_lambda_W_mK": 0.034283,
+      "max_abs_residual_pct": 0.4750143399515349
+    },
+    {
+      "nominal_temperature_K": 325,
+      "n": 3,
+      "min_observed_lambda_W_mK": 0.035723,
+      "max_observed_lambda_W_mK": 0.035988,
+      "max_abs_residual_pct": 0.5174621148884745
+    },
+    {
+      "nominal_temperature_K": 340,
+      "n": 3,
+      "min_observed_lambda_W_mK": 0.037524,
+      "max_observed_lambda_W_mK": 0.037817,
+      "max_abs_residual_pct": 0.6677567231811894
+    }
+  ],
+  "matched_marginal_sensitivities": [
+    {
+      "scenario": "nominal_zero_variation",
+      "eta_exact": "0/1",
+      "eta_decimal": 0.0,
+      "upper_box_excess_W": "0/1",
+      "upper_box_excess_W_decimal": 0.0,
+      "lower_box_deficit_W": "0/1",
+      "lower_box_deficit_W_decimal": 0.0,
+      "upper_sharp_L1_potential_K": "0/1",
+      "upper_sharp_L1_potential_K_decimal": 0.0,
+      "upper_sharp_Linfty_potential_K": "0/1",
+      "upper_sharp_Linfty_potential_K_decimal": 0.0,
+      "lower_sharp_L1_potential_K": "0/1",
+      "lower_sharp_L1_potential_K_decimal": 0.0,
+      "lower_sharp_Linfty_potential_K": "0/1",
+      "lower_sharp_Linfty_potential_K_decimal": 0.0
+    },
+    {
+      "scenario": "max_observed_abs_residual_descriptive",
+      "eta_exact": "250850489/37566149511",
+      "eta_decimal": 0.006677567231811894,
+      "upper_box_excess_W": "83148659037363/286891219515880000",
+      "upper_box_excess_W_decimal": 0.0002898264337879485,
+      "lower_box_deficit_W": "27716219679121/142808449515880000",
+      "lower_box_deficit_W_decimal": 0.0001940796904740501,
+      "upper_sharp_L1_potential_K": "9423486974681460879/10536842168328055391210",
+      "upper_sharp_L1_potential_K_decimal": 0.0008943369203163021,
+      "upper_sharp_Linfty_potential_K": "9423486974681460879/21073684336656110782420",
+      "upper_sharp_Linfty_potential_K_decimal": 0.00044716846015815107,
+      "lower_sharp_L1_potential_K": "3141162324893820293/5315538519037435000000",
+      "lower_sharp_L1_potential_K_decimal": 0.0005909396223249716,
+      "lower_sharp_Linfty_potential_K": "3141162324893820293/10631077038074870000000",
+      "lower_sharp_Linfty_potential_K_decimal": 0.0002954698111624858
+    },
+    {
+      "scenario": "R4_illustrative_one_percent",
+      "eta_exact": "1/100",
+      "eta_decimal": 0.01,
+      "upper_box_excess_W": "331467/764540000",
+      "upper_box_excess_W_decimal": 0.00043355089334763387,
+      "lower_box_deficit_W": "110489/379730000",
+      "lower_box_deficit_W_decimal": 0.0002909672662154689,
+      "upper_sharp_L1_potential_K": "40/29799",
+      "upper_sharp_L1_potential_K_decimal": 0.0013423269237222725,
+      "upper_sharp_Linfty_potential_K": "20/29799",
+      "upper_sharp_Linfty_potential_K_decimal": 0.0006711634618611363,
+      "lower_sharp_L1_potential_K": "80/90597",
+      "lower_sharp_L1_potential_K_decimal": 0.0008830314469574047,
+      "lower_sharp_Linfty_potential_K": "40/90597",
+      "lower_sharp_Linfty_potential_K_decimal": 0.00044151572347870237
+    }
+  ],
+  "guardrails": [
+    "These same-lot historical observations partly underlie SRM1450d certification; NOT independent validation.",
+    "The 1% NIST expanded uncertainty with coverage factor ~2 is NOT a hard deterministic bound or a fuzzy membership function.",
+    "The maximum observed absolute residual is a finite-sample descriptive statistic, not an inferential bound.",
+    "The 1% and empirical observed residual bands are hypothetical model sensitivity inputs, not calibrated uncertainty distributions.",
+    "Path areas, lengths, process loads, multi-node topology and local Fourier law remain hypothetical/conditional.",
+    "Temperature validity 280-340 K is for mean-temperature relation; two raw printed mean temperatures are 279.998 K.",
+    "Every real network state in R4 conserves energy; positive gaps belong to unattainable recombinations of marginal coordinates."
+  ]
+}

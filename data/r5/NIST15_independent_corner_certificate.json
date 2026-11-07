@@ -1,0 +1,11 @@
+{
+  "source_inputs": "NIST Table I1, DOI 10.6028/jres.119.012; certified fit DOI 10.6028/NIST.SP.260-173",
+  "max_observed_residual_fraction": "250850489/37566149511",
+  "grid_levels": 101,
+  "corner_sources_per_level": 32,
+  "exact_conservative_corner_states": 3232,
+  "observed_support_upper_energy_gap_W": "0.000289826433788",
+  "observed_support_lower_energy_gap_W": "0.000194079690474",
+  "proof_status": "The R4 all-alpha analytic proof applies under declared eta<0.01; grid tests are diagnostics only",
+  "empirical_status": "historical published material measurements only, not physical-network validation"
+}

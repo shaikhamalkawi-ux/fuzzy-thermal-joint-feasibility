@@ -1,0 +1,76 @@
+{
+  "G_reference_W_K": "331467/1016000",
+  "NIST_1pct_to_fuzzy": "NO: numerical scale only, separate modeling assumption",
+  "cases": {
+    "2node": {
+      "box_high_low_energy_gaps_W": "0 with the appropriate common-k realization",
+      "independent_input_corners": 8,
+      "nominal_dT_K": [
+        "5/6",
+        "2/3"
+      ],
+      "support_T_absolute_range_K": [
+        [
+          "91100/303",
+          "29800/99"
+        ],
+        [
+          "91060/303",
+          "29780/99"
+        ]
+      ],
+      "support_dT_high_K": [
+        "100/99",
+        "80/99"
+      ],
+      "support_dT_low_K": [
+        "200/303",
+        "160/303"
+      ]
+    },
+    "3node": {
+      "box_high_low_energy_gaps_W": "0 with the appropriate common-k realization",
+      "independent_input_corners": 16,
+      "nominal_dT_K": [
+        "31/40",
+        "11/20",
+        "3/8"
+      ],
+      "support_T_absolute_range_K": [
+        [
+          "30362/101",
+          "9931/33"
+        ],
+        [
+          "30344/101",
+          "902/3"
+        ],
+        [
+          "30330/101",
+          "3305/11"
+        ]
+      ],
+      "support_dT_high_K": [
+        "31/33",
+        "2/3",
+        "5/11"
+      ],
+      "support_dT_low_K": [
+        "62/101",
+        "44/101",
+        "30/101"
+      ]
+    }
+  },
+  "component_extrema_checks": 1010,
+  "corner_checks": 2424,
+  "global_energy_checks": 2424,
+  "nesting_checks": 200,
+  "scenario_conductivity_support_fraction": "1/100",
+  "scenario_geometry_A_m2": "1/4",
+  "scenario_geometry_L_m": "127/5000",
+  "scenario_heat_support_fraction": "1/5",
+  "source": "NIST SP 260-173 10.6028/NIST.SP.260-173",
+  "source_expanded_U_percent": 1,
+  "source_k_at_300_W_mK": "331467/10000000"
+}

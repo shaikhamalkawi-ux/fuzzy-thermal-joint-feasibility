@@ -1,0 +1,296 @@
+{
+  "status": "PASS — target reconstructed from original thermal balance, NOT an external human audit",
+  "project": "99FUZZYC",
+  "scientific_baseline": "R6",
+  "editorial_baseline": "R6P5",
+  "proof_domain": "0 <= q=1-alpha <=1, 4/5 <= a,b <=6/5; node conductances g_ref=1 W/K",
+  "matrix_H": [
+    [
+      "a + 1",
+      "-a",
+      "0"
+    ],
+    [
+      "-a",
+      "a + b + 1",
+      "-b"
+    ],
+    [
+      "0",
+      "-b",
+      "b + 1"
+    ]
+  ],
+  "source_vector_v": [
+    "2",
+    "1",
+    "2/5"
+  ],
+  "F_from_symbolic_LU_solve": [
+    "(17*a*b + 15*a + 20*b + 10)/(5*(3*a*b + 2*a + 2*b + 1))",
+    "(17*a*b + 15*a + 7*b + 5)/(5*(3*a*b + 2*a + 2*b + 1))",
+    "(17*a*b + 4*a + 7*b + 2)/(5*(3*a*b + 2*a + 2*b + 1))"
+  ],
+  "six_sign_factor_derivatives": {
+    "F1_da": "-(2*b + 1)*(13*b + 5)/(5*(3*a*b + 2*a + 2*b + 1)**2)",
+    "F1_db": "-a*(11*a + 3)/(5*(3*a*b + 2*a + 2*b + 1)**2)",
+    "F2_da": "(b + 1)*(13*b + 5)/(5*(3*a*b + 2*a + 2*b + 1)**2)",
+    "F2_db": "-(a + 1)*(11*a + 3)/(5*(3*a*b + 2*a + 2*b + 1)**2)",
+    "F3_da": "b*(13*b + 5)/(5*(3*a*b + 2*a + 2*b + 1)**2)",
+    "F3_db": "(2*a + 1)*(11*a + 3)/(5*(3*a*b + 2*a + 2*b + 1)**2)"
+  },
+  "whole_domain_strict_gap_positivity": {
+    "common_denominator": "(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200)",
+    "denominator_sign": -1,
+    "upper_P": "72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000",
+    "upper_P_lower_bound": "231395",
+    "lower_P": "72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000",
+    "lower_P_lower_bound": "230900",
+    "conclusion": "G_upper(q)>0 and G_lower(q)>0 for 0<q<=1 and both equal zero at q=0"
+  },
+  "upper_marginal_coordinates": [
+    "(q + 5)*(17*q**2 - 345*q + 1550)/(5*(q - 10)*(3*q - 20))",
+    "(q + 5)*(17*q**2 - 40*q - 1100)/(5*(3*q**2 - 200))",
+    "(q + 5)*(17*q**2 + 225*q + 750)/(5*(q + 10)*(3*q + 20))"
+  ],
+  "lower_marginal_coordinates": [
+    "-(q - 5)*(17*q**2 + 345*q + 1550)/(5*(q + 10)*(3*q + 20))",
+    "-(q - 5)*(17*q**2 + 40*q - 1100)/(5*(3*q**2 - 200))",
+    "-(q - 5)*(17*q**2 - 225*q + 750)/(5*(q - 10)*(3*q - 20))"
+  ],
+  "identities": {
+    "upper": {
+      "K_times_T_minus_Q_exact": [
+        "0",
+        "0",
+        "0"
+      ],
+      "sum_T_minus_sum_Q": "0",
+      "three_equal_coordinate_corrections_K": [
+        "-4*q*(q + 5)*(72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+        "-4*q*(q + 5)*(72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+        "-4*q*(q + 5)*(72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))"
+      ],
+      "gap_W_numeric_for_gref_1W_per_K": "-4*q*(q + 5)*(72*q**4 - 5*q**3 - 8600*q**2 + 500*q + 240000)/((q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+      "a_star_over_gref": "-(351*q**6 + 225*q**5 - 57500*q**4 - 15500*q**3 + 3080000*q**2 + 300000*q - 54000000)/(15*(q + 10)*(3*q + 20)*(13*q - 90)*(q**2 + 20*q - 200))",
+      "b_star_over_gref": "(297*q**6 - 135*q**5 - 46900*q**4 + 500*q**3 + 2440000*q**2 + 300000*q - 42000000)/(15*(q - 10)*(3*q - 20)*(11*q + 70)*(q**2 - 20*q - 200))"
+    },
+    "lower": {
+      "K_times_T_minus_Q_exact": [
+        "0",
+        "0",
+        "0"
+      ],
+      "sum_T_minus_sum_Q": "0",
+      "three_equal_coordinate_corrections_K": [
+        "4*q*(q - 5)*(72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+        "4*q*(q - 5)*(72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+        "4*q*(q - 5)*(72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000)/(3*(q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))"
+      ],
+      "gap_W_numeric_for_gref_1W_per_K": "4*q*(q - 5)*(72*q**4 + 5*q**3 - 8600*q**2 - 500*q + 240000)/((q - 10)*(q + 10)*(3*q - 20)*(3*q + 20)*(3*q**2 - 200))",
+      "a_star_over_gref": "(351*q**6 - 225*q**5 - 57500*q**4 + 15500*q**3 + 3080000*q**2 - 300000*q - 54000000)/(15*(q - 10)*(3*q - 20)*(13*q + 90)*(q**2 - 20*q - 200))",
+      "b_star_over_gref": "-(297*q**6 + 135*q**5 - 46900*q**4 - 500*q**3 + 2440000*q**2 - 300000*q - 42000000)/(15*(q + 10)*(3*q + 20)*(11*q - 70)*(q**2 + 20*q - 200))"
+    }
+  },
+  "eight_whole_domain_link_inequalities": [
+    {
+      "id": "upper_a_minus_lower",
+      "original_difference": "q/5 - 1 - (351*q**6 + 225*q**5 - 57500*q**4 - 15500*q**3 + 3080000*q**2 + 300000*q - 54000000)/(15*(q + 10)*(3*q + 20)*(13*q - 90)*(q**2 + 20*q - 200))",
+      "factored_numerator": "-2*q*(117*q**5 - 1335*q**4 - 16900*q**3 + 174500*q**2 + 520000*q - 5100000)",
+      "factored_denominator": "15*(q + 10)*(3*q + 20)*(13*q - 90)*(q**2 + 20*q - 200)",
+      "denominator_sign": 1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "10200000",
+        "-1040000",
+        "-349000",
+        "33800",
+        "2670",
+        "-234"
+      ],
+      "strict_positive_lower_bound": [
+        "8810766",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "upper_upper_minus_a",
+      "original_difference": "q/5 + 1 + (351*q**6 + 225*q**5 - 57500*q**4 - 15500*q**3 + 3080000*q**2 + 300000*q - 54000000)/(15*(q + 10)*(3*q + 20)*(13*q - 90)*(q**2 + 20*q - 200))",
+      "factored_numerator": "2*q*(234*q**5 + 2145*q**4 - 23200*q**3 - 221500*q**2 + 580000*q + 5700000)",
+      "factored_denominator": "15*(q + 10)*(3*q + 20)*(13*q - 90)*(q**2 + 20*q - 200)",
+      "denominator_sign": 1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "11400000",
+        "1160000",
+        "-443000",
+        "-46400",
+        "4290",
+        "468"
+      ],
+      "strict_positive_lower_bound": [
+        "10910600",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "upper_b_minus_lower",
+      "original_difference": "q/5 - 1 + (297*q**6 - 135*q**5 - 46900*q**4 + 500*q**3 + 2440000*q**2 + 300000*q - 42000000)/(15*(q - 10)*(3*q - 20)*(11*q + 70)*(q**2 - 20*q - 200))",
+      "factored_numerator": "2*q*(198*q**5 - 1815*q**4 - 17600*q**3 + 170500*q**2 + 380000*q - 3900000)",
+      "factored_denominator": "15*(q - 10)*(3*q - 20)*(11*q + 70)*(q**2 - 20*q - 200)",
+      "denominator_sign": -1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "7800000",
+        "-760000",
+        "-341000",
+        "35200",
+        "3630",
+        "-396"
+      ],
+      "strict_positive_lower_bound": [
+        "6698604",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "upper_upper_minus_b",
+      "original_difference": "q/5 + 1 - (297*q**6 - 135*q**5 - 46900*q**4 + 500*q**3 + 2440000*q**2 + 300000*q - 42000000)/(15*(q - 10)*(3*q - 20)*(11*q + 70)*(q**2 - 20*q - 200))",
+      "factored_numerator": "-2*q*(99*q**5 + 1185*q**4 - 14300*q**3 - 153500*q**2 + 440000*q + 4500000)",
+      "factored_denominator": "15*(q - 10)*(3*q - 20)*(11*q + 70)*(q**2 - 20*q - 200)",
+      "denominator_sign": -1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "9000000",
+        "880000",
+        "-307000",
+        "-28600",
+        "2370",
+        "198"
+      ],
+      "strict_positive_lower_bound": [
+        "8664400",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "lower_a_minus_lower",
+      "original_difference": "q/5 - 1 + (351*q**6 - 225*q**5 - 57500*q**4 + 15500*q**3 + 3080000*q**2 - 300000*q - 54000000)/(15*(q - 10)*(3*q - 20)*(13*q + 90)*(q**2 - 20*q - 200))",
+      "factored_numerator": "2*q*(234*q**5 - 2145*q**4 - 23200*q**3 + 221500*q**2 + 580000*q - 5700000)",
+      "factored_denominator": "15*(q - 10)*(3*q - 20)*(13*q + 90)*(q**2 - 20*q - 200)",
+      "denominator_sign": -1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "11400000",
+        "-1160000",
+        "-443000",
+        "46400",
+        "4290",
+        "-468"
+      ],
+      "strict_positive_lower_bound": [
+        "9796532",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "lower_upper_minus_a",
+      "original_difference": "q/5 + 1 - (351*q**6 - 225*q**5 - 57500*q**4 + 15500*q**3 + 3080000*q**2 - 300000*q - 54000000)/(15*(q - 10)*(3*q - 20)*(13*q + 90)*(q**2 - 20*q - 200))",
+      "factored_numerator": "-2*q*(117*q**5 + 1335*q**4 - 16900*q**3 - 174500*q**2 + 520000*q + 5100000)",
+      "factored_denominator": "15*(q - 10)*(3*q - 20)*(13*q + 90)*(q**2 - 20*q - 200)",
+      "denominator_sign": -1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "10200000",
+        "1040000",
+        "-349000",
+        "-33800",
+        "2670",
+        "234"
+      ],
+      "strict_positive_lower_bound": [
+        "9817200",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "lower_b_minus_lower",
+      "original_difference": "q/5 - 1 - (297*q**6 + 135*q**5 - 46900*q**4 - 500*q**3 + 2440000*q**2 - 300000*q - 42000000)/(15*(q + 10)*(3*q + 20)*(11*q - 70)*(q**2 + 20*q - 200))",
+      "factored_numerator": "-2*q*(99*q**5 - 1185*q**4 - 14300*q**3 + 153500*q**2 + 440000*q - 4500000)",
+      "factored_denominator": "15*(q + 10)*(3*q + 20)*(11*q - 70)*(q**2 + 20*q - 200)",
+      "denominator_sign": 1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "9000000",
+        "-880000",
+        "-307000",
+        "28600",
+        "2370",
+        "-198"
+      ],
+      "strict_positive_lower_bound": [
+        "7812802",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    },
+    {
+      "id": "lower_upper_minus_b",
+      "original_difference": "q/5 + 1 + (297*q**6 + 135*q**5 - 46900*q**4 - 500*q**3 + 2440000*q**2 - 300000*q - 42000000)/(15*(q + 10)*(3*q + 20)*(11*q - 70)*(q**2 + 20*q - 200))",
+      "factored_numerator": "2*q*(198*q**5 + 1815*q**4 - 17600*q**3 - 170500*q**2 + 380000*q + 3900000)",
+      "factored_denominator": "15*(q + 10)*(3*q + 20)*(11*q - 70)*(q**2 + 20*q - 200)",
+      "denominator_sign": 1,
+      "denominator_roots_in_closed_0_1": 0,
+      "normalized_positive_P_coefficients_ascending": [
+        "7800000",
+        "760000",
+        "-341000",
+        "-35200",
+        "3630",
+        "396"
+      ],
+      "strict_positive_lower_bound": [
+        "7423800",
+        "P(q) >= P(0) + sum_{k>=1} min(0,c_k)"
+      ],
+      "domain": "0 <= q <= 1",
+      "zero_at_q0": true,
+      "strict_positive_for_q_gt_0": true
+    }
+  ],
+  "support_gaps_W": {
+    "upper": "1855736/2541891",
+    "lower": "3695632/7625673"
+  },
+  "proof_method": "Exact symbolic identities and integer coefficient lower bounds; denominator root count exact; finite sampling not used to justify all q",
+  "archive_reference": {
+    "original_r6_zip_sha256": "2f1583a67f106c6ea70ab72140c56133afa7a1569f3572a09dae1c40d84a192a",
+    "r6_csv_sha256": "1c8523fe155fb8be313d66b685d8004e6fdf848a04cc2b22045dd70506ecf6c4",
+    "r6_script_sha256": "ae3109938e4799a4bee04857bae7c2d9ddcedeaac895e3d9dc23f7fad614a417"
+  },
+  "limitations": "Case-specific 2/3-node synthetic thermal model only; no empirical validation, no external human proof adjudication, no universal statement",
+  "environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  }
+}
